@@ -10,14 +10,19 @@ void setup() {
 
 void loop() {
   digitalWrite(red, HIGH);
-  delay(3000);
-  digitalWrite(red, LOW);
-
-  digitalWrite(green, HIGH);
-  delay(3000);
-  digitalWrite(green, LOW);
-
-  digitalWrite(yellow, HIGH);
-  delay(1000);
   digitalWrite(yellow, LOW);
+  digitalWrite(green, LOW);
+  delay(2500);
+
+  
+  digitalWrite(red, HIGH);
+  digitalWrite(yellow, HIGH);
+  digitalWrite(green, LOW);
+  delay(2500);
+  
+  digitalWrite(red, LOW);
+  digitalWrite(yellow, LOW);
+  digitalWrite(green, HIGH);
+  delay(2500);
+  
 }

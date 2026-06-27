@@ -1,7 +1,23 @@
+int red = 2;
+int yellow = 3;
+int green = 4;
+
 void setup() {
-  Serial.begin(9600);
-  Serial.println("Auto Traffic Light System Started");
+  pinMode(red, OUTPUT);
+  pinMode(yellow, OUTPUT);
+  pinMode(green, OUTPUT);
 }
 
 void loop() {
+  digitalWrite(red, HIGH);
+  delay(3000);
+  digitalWrite(red, LOW);
+
+  digitalWrite(green, HIGH);
+  delay(3000);
+  digitalWrite(green, LOW);
+
+  digitalWrite(yellow, HIGH);
+  delay(1000);
+  digitalWrite(yellow, LOW);
 }
